@@ -35,7 +35,7 @@ public class Main {
         im.applyHomography(tmp);
         
         // Denoise part
-        im.averagingFilter(3);
+        im.averagingFilter(5);
         im.contraharmonicFilter(7,-7.5); // Delete peper noise
         im.otsuThreshold(); // Make image to binary
         im.fillEdgeOfImage(10); // Fill edge with background color
